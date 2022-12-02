@@ -46,6 +46,6 @@ websocketServer.on("request",function(requestObj){
     });
 });
 
-server.listen(8000,function(){
+server.listen(process.env.PORT||8000,function(){
     console.log("listening at "+server.address().port);
 });
